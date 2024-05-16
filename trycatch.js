@@ -1,4 +1,4 @@
-function sum(num2) {
+function sum(num1, num2) {
   try {
     const sumvalue = num1 + num2;
     return sumvalue;
