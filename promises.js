@@ -1,24 +1,26 @@
-// const promise = new Promise((resolve, reject) => {
-//   const num = 3;
-//   if (num % 2 === 0) {
-//     resolve();
-//   } else {
-//     reject();
-//   }
-// });
+const promise = new Promise((resolve, reject) => {
+  const num = 3;
+  if (num % 2 === 0) {
+    resolve();
+  } else {
+    reject();
+  }
+});
 
-// console.log(1);
+const isOdd = (num) => num % 2 != 0;
 
-// promise
-//   .then(() => console.log("Even number"))
-//   .catch(() => console.log("Odd Number"));
+console.log(1);
 
-// console.log(2);
+promise
+  .then(() => console.log("Even number"))
+  .catch(() => console.log("Odd Number"));
 
-const url = "https://jsonplaceholder.org/posts";
+console.log(2);
 
-fetch(url)
-  .then((response) => {
-    response.json().then((json) => console.log(json));
-  })
-  .catch((error) => console.log(error));
+// const url = "https://jsonplaceholder.org/posts";
+
+// fetch(url)
+//   .then((response) => {
+//     response.json().then((json) => console.log(json));
+//   })
+//   .catch((error) => console.log(error));

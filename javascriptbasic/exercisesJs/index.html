@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise For Loop</title>
+    <!-- <style>
+      div {
+        background-color: black;
+        width: 100px;
+        height: 100px;
+      }
+      .widthmax {
+        background-color: yellow;
+        transition: 1s;
+        width: 200px;
+        height: 200px;
+      } 
+    </style>-->
+  </head>
+  <body>
+    <!-- <script src="./assets/javascriptCourse.js"></script> -->
+    <!-- <script src="./assets/forloop.js"></script> -->
+    <!-- <script src="./assets/multidimensional.js"></script> -->
+    <!-- <script src="./assets/function.js"></script> -->
+    <!-- <script src="./assets/objects.js"></script> -->
+    <script src="./assets/script.js"></script>
+
+    <!-- Question 1 -->
+    <!-- <input id="inputBox" onkeyup="result()" />
+    <button onclick="result()">Result</button>
+    <h1 id="value"></h1>
+    <script>
+      let inputbox = document.getElementById("inputBox");
+      let value = document.getElementById("value");
+      function result() {
+        value.textContent = inputbox.value;
+      }
+ </script> -->
+    <!-- Question2 -->
+    <!-- <button onclick="add()">Add Hello</button>
+    <h1 id="demo"></h1>
+    <script>
+      function add() {
+        let demo = document.getElementById("demo");
+        demo.textContent = "Hello";
+      }
+    </script> -->
+    <!-- <button onclick="update()">Add</button>
+    <div id="result"></div>
+    <script>
+      function update() {
+        let div = document.getElementById("result");
+        let listitem = document.createElement("h1");
+        listitem.textContent = "Hello";
+        div.append(listitem);
+      }
+    </script> -->
+
+    <!-- Question 3 -->
+    <!-- <button onclick="changecolor()" id="btn">Change color</button>
+    <script>
+      function changecolor() {
+        let btn = document.getElementById("btn");
+        btn.style.backgroundColor = "red";
+      }
+    </script> -->
+
+    <!-- Question 4 -->
+    <!-- <h1 id="name"></h1>
+    <button onclick="click1()">John</button>
+    <button onclick="click2()">Praveen</button>
+    <button onclick="click3()">Tamil</button>
+    <script>
+      function click1() {
+        let name = document.getElementById("name");
+        name.textContent = "John";
+      }
+      function click2() {
+        let name = document.getElementById("name");
+        name.textContent = "Praveen";
+      }
+      function click3() {
+        let name = document.getElementById("name");
+        name.textContent = "English";
+      }
+    </script> -->
+
+    <!-- <h1 id="result"></h1>
+    <button onclick="update(event)">John</button>
+    <button onclick="update(event)">Tamil</button>
+    <button onclick="update(event)">selvi</button>
+    <script>
+      let h1 = document.getElementById("result");
+      function update(event) {
+        h1.textContent = event.target.textContent;
+      }
+    </script> -->
+
+    <!-- Question 5 -->
+    <!-- <h1 onclick="deleteitem(event)">one</h1>
+    <h1 onclick="deleteitem(event)">Two</h1>
+    <h1 onclick="deleteitem(event)">Three</h1>
+    <h1 onclick="deleteitem(event)">Four</h1>
+    <h1 onclick="deleteitem(event)">Five</h1>
+    <h1 onclick="deleteitem(event)">Six</h1>
+    <script>
+      function deleteitem() {
+        event.target.remove();
+      }
+    </script> -->
+
+    <!-- 
+    <h1>Guess the number</h1>
+    <input id="guessnumber" />
+    <button onclick="check()">Check</button>
+    <p id="result">You are Wrong/Right</p>
+    <p id="score">Score:10</p>
+    <script>
+      let guessnumber = document.getElementById("guessnumber");
+      let result = document.getElementById("result");
+      var score = document.getElementById("score");
+      let randomnumber = Math.floor(Math.random() * 10) + 1;
+      var score = 10;
+      function check() {
+        let enternumber = guessnumber.value;
+        if (randomnumber == enternumber) {
+          result.textContent = "Right";
+          alert("YOU WON");
+        } else {
+          score = score - 1;
+          score.textContent = "score:" + score;
+          result.textContent = "Wrong";
+        }
+      }
+    </script> -->
+
+    <!-- <h2>JavaScript HTML DOM</h2>
+      <p>Finding HTML Elements by Class Name.</p>
+    <p class="intro">Hello World!</p>
+    <p class="intro">
+      This example demonstrates the <b>getElementsByClassName</b> method.
+    </p>
+
+    <p id="demo"></p>
+
+    <script>
+      const x = document.getElementsByClassName("intro");
+      document.getElementById("demo").innerHTML =
+        'The first paragraph (index 0) with class="intro" is: ' +
+        x[0].innerHTML;
+    </script> -->
+
+    <!-- <div id="box"></div>
+    <button onclick="change()">change color</button>
+    <script>
+      let box = document.getElementById("box");
+      function change() {
+        // box.style.backgroundColor = "red";
+        box.setAttribute("class", "widthmax");
+      }
+    </script> -->
+    <!-- <h1>Guess the number</h1>
+    <input id="num" />
+    <button onclick="check()">check</button>
+    <p id="result">We are wrong/Right</p>
+    <p id="score">score:10</p>
+    <script>
+      let num = document.getElementById("num").value;
+      let result = document.getElementById("result");
+      const scoreEl = document.getElementById("score");
+      let randomnumber = Math.floor(Math.random() * 10) + 1;
+      let score = 10;
+      function check() {
+        let enternumber = num;
+        if (score < 1) {
+          alert("Limit exceeded");
+        } else if (randomnumber == enternumber) {
+          result.textContent = "Right";
+          alert("Your Won!");
+        } else {
+          score = score - 1;
+          scoreEl.textContent = "score: " + score;
+          result.textContent = "Wrong";
+        }
+      }
+    </script> -->
+
+    <!-- <input id="num1" value="" />
+    <input id="num2" value="" />
+    <button onclick="submit()">Add</button>
+    <p id="result">Total</p> -->
+    <!-- <script>
+      function submit() {
+        let box1 = Number(document.getElementById("num1").value);
+        let box2 = Number(document.getElementById("num2").value);
+        let result = document.getElementById("result");
+        let total = box1 + box2;
+        result.textContent = total;
+      }
+    </script> -->
+
+    <!-- <p id="demo">Hello</p>
+    <p id="hi">Hi</p> -->
+    <!-- <h1 id="title">Hello World</h1>
+    <button onclick="changeword()">Click</button> -->
+    <!-- <script>
+      let title = (document.getElementById("title").textContent = "Bye World");
+      let demo = (document.getElementById("demo").textContent = "Bye");
+      console.log(demo);
+      const para = document.getElementById("hi");
+      console.log(para.textContent);
+      para.textContent = "Bye";
+    </script> -->
+
+    <!-- <h2>My First JavaScript</h2>
+
+    <button
+      type="button"
+      onclick="document.getElementById('demo').innerHTML = Date()"
+    >
+      Click me to display Date and Time.
+    </button>
+
+    <p id="demo"></p> 
+     <h1 class="text"></h1>
+    <script>
+      let num = document.getElementsByClassName("text");
+      num.innerHTML = "Hi hollo welcome to javascript";
+    </script>  -->
+  </body>
+</html>
